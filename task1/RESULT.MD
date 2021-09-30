@@ -168,10 +168,10 @@ def func(A, k, t, w, q):
 
 ```python
 # Computing signals
-xf1, yf1 = func(A, 0.0, None, 1, 0)
-xf2, yf2 = func(A, 0.0, None, 2, 0)
-xf4, yf4 = func(A, 0.0, None, 4, 0)
-xf8, yf8 = func(A, 0.0, None, 8, 0)
+xf1, yf1 = func(A, k, None, 1, 0)
+xf2, yf2 = func(A, k, None, 2, 0)
+xf4, yf4 = func(A, k, None, 4, 0)
+xf8, yf8 = func(A, k, None, 8, 0)
 
 # Computing spectrums
 xs1, ys1 = spectrum(yf1)
@@ -235,6 +235,6 @@ aspec8.plot(xs8, ys8, style)
 
 
 
-    [<matplotlib.lines.Line2D at 0x137908640a0>]
+    [<matplotlib.lines.Line2D at 0x13790b62850>]
 
 
