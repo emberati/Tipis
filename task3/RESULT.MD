@@ -1,4 +1,4 @@
-# Harmonic signal spectrum
+# Amplitude, frequency and phase modulation
 
 ## The purpose of work
 

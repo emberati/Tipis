@@ -1,4 +1,4 @@
-# Harmonic signal spectrum
+# Sprctrum trimming and signal syntesis
 
 ## The purpose of work
 
