@@ -69,6 +69,7 @@ def trim(ys, low, high): # BUG THERE
     """
     Method trimming signal by spectrum frequencies
     """
+    ys = ys.copy()
     xs = rfftfreq(SAMPLES, 1 / FS)
     ys[:low]  = 0
     ys[high:] = 0
@@ -300,8 +301,6 @@ signal_axes[2].set_title('Filtered meander')
 fill_color = (0.121, 0.464, 0.703, 0.39)
 
 draw(signal_axes, [(xss, yss), (xsr, ysr), (xsf, ysf)])
-#draw([signal_axes[2]], [(filtered_x, filtered_y)], fill='out')
-#draw(spectrum_axes, [(xsa, abs(ysa))], color=fill_color, fill='in')
 ```
 
 
