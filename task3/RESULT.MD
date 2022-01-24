@@ -68,6 +68,7 @@ def trim(ys, low, high): # BUG THERE
     """
     Method trimming signal by spectrum frequencies
     """
+    ys = ys.copy()
     xs = rfftfreq(SAMPLES, 1 / FS)
     ys[:low]  = 0
     ys[high:] = 0
